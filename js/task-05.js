@@ -1,7 +1,5 @@
-let land = prompt('Укажите страну назначения:');
+let land = prompt('Укажите страну назначения:').toLowerCase();
 let price = 0;
-
-land = land.toLowerCase();
 
 switch (land) {
   case 'китай':
