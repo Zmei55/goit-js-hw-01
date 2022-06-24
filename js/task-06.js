@@ -6,8 +6,13 @@ while (true) {
   if (input === null) {
     alert(`Общая сумма чисел равна ${total}`);
     break;
-  } else {
-    input = Number(input);
-    total += input;
   }
+
+  if (isNaN(input)) {
+    alert('Было введено не число, попробуйте еще раз');
+    continue;
+  }
+
+  input = Number(input);
+  total += input;
 }
